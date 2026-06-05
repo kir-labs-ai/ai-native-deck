@@ -1194,7 +1194,7 @@
     window.__lowPowerMode = stored === '1' || (stored === null && reduced);
     function updateHint(){
       const hint = document.getElementById('hint');
-      if(hint) hint.textContent = `← → 翻页 · B ${window.__lowPowerMode ? '动态' : '静态'} · ESC 索引`;
+      if(hint) hint.textContent = '';
     }
     window.__setLowPowerMode = function(on, opts={}){
       window.__lowPowerMode = !!on;
